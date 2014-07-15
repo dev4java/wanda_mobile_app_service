@@ -1,0 +1,26 @@
+package iMobile.web.action;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import iMobile.bean.beas.MssChar;
+import iMobile.manager.FeedbackManager;
+import iMobile.utils.JsonUtilobject;
+
+@Component
+public class FeedbackAction {
+
+	@Autowired
+	private FeedbackManager feedbackManager;
+	
+	public void addFeerBack(String vid,String title,String type,String content,HttpServletRequest request,HttpServletResponse response){
+		try {
+			JsonUtilobject.JsonUtilRemoteSucceed(request, response, new MssChar(0, "成功"));
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

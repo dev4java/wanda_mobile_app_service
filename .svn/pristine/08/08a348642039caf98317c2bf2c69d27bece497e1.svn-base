@@ -1,0 +1,16 @@
+datasource.type=mysql
+datasource.driverClassName=com.mysql.jdbc.Driver
+datasource.url=jdbc\:mysql\://127.0.0.1\:3306/wdAppServer??autoReconnect\=true&characterEncoding\=utf-8
+datasource.username=root
+datasource.password=
+
+datasource.initialSize=1
+datasource.maxActive=10
+datasource.maxIdle=2
+datasource.minIdle=1
+datasource.maxWait=120000
+datasource.whenExhaustedAction=1
+datasource.validationQuery=select 1 from dual
+datasource.testOnBorrow=true
+datasource.testOnReturn=false
+

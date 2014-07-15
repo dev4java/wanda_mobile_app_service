@@ -1,0 +1,30 @@
+package iMobile.bean.beas;
+
+public class successErrer
+{	
+	
+	
+	public successErrer(MssChar result){
+		this.result=result;
+	}
+	
+	private MssChar result;
+	
+
+	public MssChar getResult()
+	{
+		return result;
+	}
+
+	public void setResult(MssChar result)
+	{
+		this.result = result;
+	}
+
+	
+	
+
+	
+	
+	
+}

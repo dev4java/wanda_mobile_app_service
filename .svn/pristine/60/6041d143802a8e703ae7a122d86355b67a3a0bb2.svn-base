@@ -1,0 +1,62 @@
+
+package iMobile.bean.beas;
+
+import java.util.List;
+
+import javax.persistence.Entity;
+
+@Entity
+public class ListObjectChar
+{
+
+	private MssChar	result;
+	
+	private List	returnType;
+	
+	private Object	returnObject;
+	
+
+	
+	public ListObjectChar()
+	{}
+
+
+
+	public MssChar getResult() {
+		return result;
+	}
+
+
+
+	public void setResult(MssChar result) {
+		this.result = result;
+	}
+
+
+
+	public List getReturnType() {
+		return returnType;
+	}
+
+
+
+	public void setReturnType(List returnType) {
+		this.returnType = returnType;
+	}
+
+
+
+	public Object getReturnObject() {
+		return returnObject;
+	}
+
+
+
+	public void setReturnObject(Object returnObject) {
+		this.returnObject = returnObject;
+	}
+	
+	
+	
+	
+}

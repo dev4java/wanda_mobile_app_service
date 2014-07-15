@@ -1,0 +1,34 @@
+package iMobile.web.action;
+
+import iMobile.bean.beas.ListObjectChar;
+import iMobile.bean.beas.MssChar;
+import iMobile.entity.appclient;
+import iMobile.manager.appclientManager;
+import iMobile.utils.JsonUtilobject;
+
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class AppClientAction {
+
+	@Autowired
+	private appclientManager appclientManager;
+	
+	public void checkVersion(String vid,String version,String platform,HttpServletResponse response){
+		
+		try {
+			appclient appclient = new appclient();
+			appclient.setLastversion("2.2");
+			appclient.setUrl("http://www.baidu.com");
+			ListObjectChar objectChar = new ListObjectChar();
+			objectChar.setResult(new MssChar(0, "成功"));
+			objectChar.setReturnObject(appclient);
+			JsonUtilobject.JsonUtilsucceedobject(response, objectChar);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

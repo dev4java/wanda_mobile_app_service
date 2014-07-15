@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 3.2//EN" "http://tuckey.org/res/dtds/urlrewrite3.2.dtd">
+<urlrewrite>
+	<rule>
+		<note>/</note>
+		<from>^/$</from>
+		<to>/index.do</to>
+	</rule>
+	<rule>
+		<from>^/(\w+)/?$</from>
+		<to>/$1.do</to>
+	</rule>
+	<rule>
+		<from>^/(\w+)/(\w+)/?$</from>
+		<to>/$1/$2.do</to>
+	</rule>
+	<rule>
+		<from>^/(\w+)/(\w+)/(\w+)/?$</from>
+		<to>/$1/$2/$3.do</to>
+	</rule>
+	<rule>
+		<from>^/(\w+)/(\w+)/(\w+)/(\w+)/?$</from>
+		<to>/$1/$2/$3/$4.do</to>
+	</rule>
+	<rule>
+		<from>^/(\w+)/(\w+)/(\w+)/(\w+)/(\w+)/?$</from>
+		<to>/$1/$2/$3/$4/$5.do</to>
+	</rule>
+		<rule>
+		<from>^/(\w+)/(\w+)/(\w+)/(\w+)/(\w+)/(\w+)/?$</from>
+		<to>/$1/$2/$3/$4/$5/$6.do</to>
+	</rule>
+</urlrewrite>

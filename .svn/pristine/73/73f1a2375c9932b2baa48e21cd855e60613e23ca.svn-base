@@ -1,0 +1,10 @@
+handlers= java.util.logging.ConsoleHandler
+redirect.commons.logging = enabled
+
+org.hibernate.level=INFO
+org.hibernate.cfg.SettingsFactory.level=SEVERE
+org.hibernate.cfg.HbmBinder.level=SEVERE
+org.hibernate.SQL.level=FINEST
+org.hibernate.type.level=FINEST
+# org.hibernate.tool.hbm2ddl.SchemaExport.level=FINEST
+# org.hibernate.transaction.level=FINEST

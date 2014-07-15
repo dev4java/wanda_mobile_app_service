@@ -1,0 +1,66 @@
+package iMobile.entity;
+
+import java.io.Serializable;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import oracle.sql.CHAR;
+
+@SuppressWarnings("serial")
+@Entity
+@Table(name = "Feedback")
+public class Feedback implements Serializable
+{	
+	@Id
+	@Column(name = "id")
+	private  Long id;
+	
+	@Column(name = "employeeID")
+	private String employeeID;
+	
+	@Column(name = "Content")
+	private String content;
+	
+	@Column(name = "type")
+	private CHAR type;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getEmployeeID() {
+		return employeeID;
+	}
+
+	public void setEmployeeID(String employeeID) {
+		this.employeeID = employeeID;
+	}
+
+	public String getContent() {
+		return content;
+	}
+
+	public void setContent(String content) {
+		this.content = content;
+	}
+
+	public CHAR getType() {
+		return type;
+	}
+
+	public void setType(CHAR type) {
+		this.type = type;
+	}
+	
+	
+
+	
+	
+}
